@@ -1,0 +1,114 @@
+/*  Main Todo List App Styles */
+
+
+/* --------------------------------------------- Sitewide  */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --app-bg-color:      #bec3c7;
+    --app-wrapper-color: #282828; 
+    --app-font-color:    #dbdee1;
+}
+
+body, html {
+    background-color: var(--app-bg-color);
+    width: 100%;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: var(--app-font-color);
+    overflow: hidden;
+}
+
+/* --------------------------------------------- Containers  */
+
+.wrapper {
+    margin: 0 auto;
+    background-color: var(--app-wrapper-color);
+    width: 400px;
+    height: max-content;
+    min-height: 200px;
+    margin-top: 20px;
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+
+}
+
+.search-bar-cell {
+    display: flex;
+    background-color: white;
+    width: 340px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+input {
+    border: 0px;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 5px;
+    width: 85%;
+    margin-left: 14px;
+    margin-top: 1px;
+    height: 38px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.search-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #26ad5e;
+    width: 15%;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.search-submit:hover {
+    cursor: pointer;
+    background-color: #138c45;
+}
+
+.item-cell {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: #2e2e2e;
+    font-size: 14px;
+}
+
+.item-done {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3b3b3b;
+    width: 48px;
+    height: 48px;
+    font-size: 30px;
+    color: #282828;
+}
+
+.item-done:hover {
+    cursor: pointer;
+    color: #26ad5e;
+}
+
+.item-details {
+    padding-left: 10px;
+}
